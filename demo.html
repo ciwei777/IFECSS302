@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        transition: transform 1s;
+      }
+      .skew {
+        margin: 200px 100px;
+        /* border-radius: 50%; */
+        
+      }
+      .skew:hover {
+        /* transform: skew(30deg, -30deg); */
+        transform: skewX(30deg) skewY(60deg);
+      }
+      .scale {
+        margin: 200px 150px;
+        
+      }
+      .scale:hover {
+          /* transform: scale(2,1) */
+          transform: scaleX(2) scaleY(2);
+      }
+      .rotate {
+        margin: 200px 200px;
+      }
+      .rotate:hover {
+          transform: rotate(180deg);
+      }
+      .translate {
+        margin: 200px 250px;
+      }
+      .translate:hover {
+          transform: translate(100px, 100px)
+      }
+      .matrix {
+        margin: 200px 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        CSS3 2D 转换 transform
+        通过 CSS3 转换，我们能够对元素进行移动、缩放、转动、拉长或拉伸
+        translate()  // 位移
+        rotate() 
+        scale() 
+        skew() // 通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数：
+        matrix() 
+     -->
+    <div class="box skew"></div>
+    <div class="box scale"></div>
+     <div class="box rotate"></div>
+     <div class="box translate"></div>
+     <!-- <div class="box matrix"></div> -->
+  </body>
+</html>
