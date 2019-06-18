@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* 盒子基础设置 */
+      .box {
+        float: left;
+        width: 56px;
+        height: 64px;
+        border: 2px solid #ebebeb;
+        background-color: #f7f6f6;
+        text-align: center;
+        line-height: 64px;
+        margin-left: 25px;
+        margin-top: 27px;
+      }
+      .skew {
+        /* 倾斜30度 */
+        transform: skewX(30deg); 
+      }
+      .scale {
+        /* 压缩2倍 */
+        transform: scaleX(0.5);
+      }
+      .rotate {
+        /* 旋转45度 */
+        transform: rotate(45deg);
+      }
+      .translate {
+        /* x轴位移 10px y轴位置 20px */  
+        transform: translate(10px, 20px);
+      }
+      .all {
+        /* 结合上述所有变换 */
+        transform: skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px, 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>box0</span>
+    </div>
+    <div class="box skew">
+      <span>box1</span>
+    </div>
+    <div class="box scale">
+      <span>box2</span>
+    </div>
+    <div class="box rotate">
+      <span>box3</span>
+    </div>
+    <div class="box translate">
+      <span>box4</span>
+    </div>
+    <div class="box all">
+      <span>box5</span>
+    </div>
+  </body>
+</html>
